@@ -4,3 +4,4 @@ pandas
 tensorflow
 contractions
 scikit-learn
+nltk
