@@ -209,7 +209,7 @@ def clean_dataset_sequential(data_dir: str, seed: int, batch_size: int, debug: b
 	train_dataset = train_dataset.cache().prefetch(buffer_size=AUTOTUNE)
 	val_dataset = val_dataset.cache().prefetch(buffer_size=AUTOTUNE)
 
-	return train_dataset, val_dataset
+	return tokenizer, num_classes, train_dataset, val_dataset
 
 def clean_dataset_transformer(data_dir: str, seed: int, batch_size: int, debug: bool = False):
 
@@ -234,5 +234,5 @@ def clean_dataset_transformer(data_dir: str, seed: int, batch_size: int, debug: 
 	training_dataset = training_dataset.cache().prefetch(buffer_size=AUTOTUNE)
 	validation_dataset = validation_dataset.cache().prefetch(buffer_size=AUTOTUNE)
 
-	return training_dataset, validation_dataset
+	return num_classes, training_dataset, validation_dataset
 
