@@ -5,3 +5,4 @@ tensorflow=2.8.1
 contractions
 scikit-learn
 nltk
+tensorflow-text
