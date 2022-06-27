@@ -19,4 +19,4 @@ To train models, run `train.py` script within `Text-classification` folder with 
 $ python train.py --data_dir <path to dataset> --batch_size <batch_size> --epochs <number of epochs to train for> --seed <random state seed> --scaler_type <scaler to use> --transform_type <type of tokenizer> --model_name <model to use for training> --debug <for debugging>
 ```
 
-If this sounds tedious, you can play with the [colab notebook] (https://colab.research.google.com/drive/1ipyhpEdEbV1tzU5Z2oinmbAU1upPS0Qb#scrollTo=5-VTHCr7wE6P) that already has various scikit-learn models, sequential models and pre-trained models implemented.
+If this sounds tedious, you can play with this [notebook](https://colab.research.google.com/drive/1ipyhpEdEbV1tzU5Z2oinmbAU1upPS0Qb#scrollTo=5-VTHCr7wE6P) that already has various scikit-learn models, sequential models and pre-trained models implemented.
