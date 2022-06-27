@@ -1,5 +1,5 @@
 # Text-classification
-Multi class text classification using scikit-learn models, sequential models, pre-trained transformer models
+Multi class text classification using different word embeddings, scikit-learn models, sequential models, pre-trained transformer models
 
 # Dataset
 Genre classfication dataset with the movie name, summary of the movie and its genre seperated by ':::' is saved in a text file which can be downloaded from [here](https://www.kaggle.com/code/rohitganji13/film-genre-classification-using-nlp/data).
@@ -20,3 +20,28 @@ $ python train.py --data_dir <path to dataset> --batch_size <batch_size> --epoch
 ```
 
 If this sounds tedious, you can play with this [notebook](https://colab.research.google.com/drive/1ipyhpEdEbV1tzU5Z2oinmbAU1upPS0Qb#scrollTo=5-VTHCr7wE6P) that already has various scikit-learn models, sequential models and pre-trained models implemented.
+
+**NOTE : tensorflow-text is not compatible with conda. It has to be fixed to be able to run `BERT` model. Until then, use this [colab notebook](https://colab.research.google.com/drive/1ipyhpEdEbV1tzU5Z2oinmbAU1upPS0Qb#scrollTo=5-VTHCr7wE6P) to explore different `BERT` models.**
+
+# References
+Classify text with BERT - https://www.tensorflow.org/text/tutorials/classify_text_with_bert
+
+Scikit-learn - https://scikit-learn.org/stable/
+
+Expanding word contractions - https://www.geeksforgeeks.org/nlp-expand-contractions-in-text-processing/
+
+Tensorflow's ragged tensor to handle inputs of different length - https://www.tensorflow.org/guide/ragged_tensor
+
+Tensorflow dataset - https://www.tensorflow.org/guide/data
+
+Tensorflow's text generation - https://www.tensorflow.org/text/tutorials/text_generation
+
+Tensorflow training - https://www.tensorflow.org/guide/keras/train_and_evaluate
+
+Writing training loop from scratch - https://www.tensorflow.org/guide/keras/writing_a_training_loop_from_scratch
+
+Saving and loading models - https://www.tensorflow.org/tutorials/keras/save_and_load
+
+Glove embeddings using spacy - https://lvngd.com/blog/spacy-word-vectors-as-features-in-scikit-learn/
+
+Fasttext embeddings - https://stackoverflow.com/questions/65300462/write-a-fasttext-customised-transformer
