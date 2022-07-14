@@ -1,6 +1,8 @@
 # Text-classification
 Multi class text classification using different word embeddings, scikit-learn models, sequential models, pre-trained transformer models
 
+**NOTE: For now, the goal is to explore different types of models that can be used for text classification and see how each one performs. I'll add more models as I keep exploring new ones**
+
 # Dataset
 Genre classfication dataset with the movie name, summary of the movie and its genre seperated by ':::' is saved in a text file which can be downloaded from [here](https://www.kaggle.com/code/rohitganji13/film-genre-classification-using-nlp/data).
 
